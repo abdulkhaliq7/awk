@@ -10,7 +10,7 @@ The Go AWK package provides a simple and efficient way to process and manipulate
 ## Installation
 To install the package, run:
 ```go
-go get -u github.com/abdulkhaliq/awk
+go get -u github.com/abdulkhaliq7/awk
 ```
 ## Usage
 
