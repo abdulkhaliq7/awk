@@ -20,7 +20,7 @@ import "github.com/abdulkhaliq7/awk"
 ```
 ### 2. Create an AWK Instance
 ```go
-data := "John|30|New York"
+data := "Abdulkhaliq|Hargeisa|Golang"
 awkInstance := awk.NewAwk(data)
 ```
 ### 3. Split Data
@@ -48,7 +48,7 @@ fmt.Println("Specific columns (0 and 2):\n", splitData.Data)
 
 Replace occurrences of specific substrings in the data:
 ```go
-replacedData := splitData.Replace("John", "abdulkhaliq")
+replacedData := splitData.Replace("Abdulkhaliq", "A7")
 fmt.Println(replacedData.Data)
 ```
 
