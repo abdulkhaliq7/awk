@@ -11,12 +11,6 @@ type Awk struct {
 	Data string
 }
 
-func NewAwk(data string) *Awk {
-
-	return &Awk{Data: data}
-
-}
-
 func (a *Awk) DataSplit(splitField, printingField string, chosenColumns ...string) (*Awk, error) {
 
 	if a.Data == "" {
@@ -71,3 +65,5 @@ func (a *Awk) Replace(old, new string) *Awk {
 	updatedData := strings.ReplaceAll(a.Data, old, new)
 	return &Awk{Data: updatedData}
 }
+
+func NewAwk(data string) *Awk { return &Awk{Data: data} }
